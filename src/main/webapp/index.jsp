@@ -24,7 +24,10 @@
 	<a href="jamerson/q1-cgi.html">Questão 1</a>
 	<br>
 	<a href="jamerson/q2-servidores.html">Questão 2</a>
+	<br>
+	<a href= "questao3">Questão 3 </a>
 	
-</h2>
+	
+	</h2>
 </body>
 </html>
