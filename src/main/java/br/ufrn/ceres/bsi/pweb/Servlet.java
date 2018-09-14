@@ -10,16 +10,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class servlet
  */
-@WebServlet("questao3")
-
+@WebServlet("/questao3")
 public class Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -38,7 +33,8 @@ public class Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		handleRequest(request, response);
 	}
 
 	/**
@@ -46,7 +42,7 @@ public class Servlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		handleRequest(request, response);
 	}
 
 		public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
